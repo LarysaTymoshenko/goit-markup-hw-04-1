@@ -151,9 +151,36 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 206px;
+  margin: auto;
+}
+.list-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+.icon-list-social {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-text-color);
+}
+.list-social .list-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-list-social:hover,
+.icon-list-social:focus {
+  fill: var(--link-text-color);
+}
+.list-social-link:focus,
+.list-social-link:hover {
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
 }
 
-.contact {
+/* END*/
+
+.address .list-social-item .contact {
   margin: 0px;
 }
 
