@@ -48,6 +48,20 @@ img {
 .none-link {
   text-decoration: none;
 }
+/*Скрытый загловок*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* Шапка сайта*/
 /* Стили логотипа*/
@@ -128,6 +142,7 @@ img {
 .icon-h-sm:hover,
 .icon-h-sm:focus {
   fill: var(--accent-text-color);
+  cursor: pointer;
 }
 /* end icon header*/
 
@@ -160,11 +175,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.list-social-item {
+  margin-top: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .icon-list-social {
   width: 20px;
   height: 20px;
   fill: var(--secondary-text-color);
 }
+
 .list-social .list-social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -176,9 +198,10 @@ img {
 .list-social-link:hover {
   background-color: var(--accent-text-color);
   border-radius: 50%;
+  cursor: pointer;
 }
 
-/* END*/
+/* END  иконки соц.сетей*/
 
 .address .list-social-item .contact {
   margin: 0px;
@@ -214,7 +237,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contact .link:focus,
-.contact .link:hover,
+.contact .link,
 .contact-footer .link:hover,
 .contact-footer .link:focus {
   color: var(--accent-text-color);
@@ -224,7 +247,7 @@ img {
 }
 /* Студия, текст и заголовки*/
 .section-color {
-  background: #f5f4fa;
+  background: var(--btn-portfolio-color);
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -329,6 +352,9 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .list-section-client {
@@ -341,6 +367,22 @@ img {
 .list-section-client .link-client:not(:last-child) {
   margin-right: 30px;
 }
+.icon-client {
+  width: 106px;
+  height: 60px;
+  fill: var(--secondary-text-color);
+}
+
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--accent-text-color);
+  cursor: pointer;
+}
+.link-client:focus,
+.link-client:hover {
+  border: 1px solid #2196f3;
+}
+/*END CLIENT*/
 
 /* Портфолио, текст и загловки */
 /*заголовок по стилю :совпадает с боди*/
@@ -384,21 +426,6 @@ img {
 .box {
   padding: 20px 24px;
   width: 370px;
-}
-
-/*Скрытый загловок*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* HERO */
@@ -447,6 +474,9 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 .contact-footer .link-footer {
@@ -460,8 +490,25 @@ img {
 .address {
   font-style: normal;
 }
+.tittle-footer-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
+.footer-social1 {
+  margin-left: 70px;
+}
+
+.icon-list-social-footer {
+  fill: var(--link-text-color);
+  height: 20px;
+  width: 20px;
+}
 /* button */
+
 .btn-hero {
   display: inline-block;
   font-size: inherit;
