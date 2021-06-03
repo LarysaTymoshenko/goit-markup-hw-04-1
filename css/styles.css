@@ -138,11 +138,21 @@ img {
   justify-content: center;
   background-color: rgba(245, 244, 250, 1);
   height: 120px;
+  margin-bottom: 30px;
 }
 .iconfeat {
   width: 70px;
   height: 70px;
 }
+/* end icon faetcher*/
+
+/* иконки соц.сетей*/
+.list-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact {
   margin: 0px;
 }
