@@ -119,6 +119,10 @@ img {
   line-height: 1.17;
   display: block;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.contact-link .link {
+  fill: var(--secondary-text-color);
 }
 .link {
   padding-top: 32px;
@@ -236,10 +240,10 @@ img {
 /* Ссылки и контакты в хедере и футере*/
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contact .link:focus,
-.contact .link,
+.contact-link .link:focus,
 .contact-footer .link:hover,
-.contact-footer .link:focus {
+.contact-footer .link:focus,
+.contact-link .link:hover {
   color: var(--accent-text-color);
 }
 .site-nav .current {
@@ -506,6 +510,7 @@ img {
 }
 
 .footer-social1 {
+  padding-left: 70px;
 }
 
 .icon-list-social-footer {
