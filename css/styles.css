@@ -381,6 +381,7 @@ img {
 .link-client:focus,
 .link-client:hover {
   border: 1px solid #2196f3;
+  fill: var(--accent-text-color);
 }
 /*END CLIENT*/
 
@@ -505,7 +506,6 @@ img {
 }
 
 .footer-social1 {
-  margin-left: 70px;
 }
 
 .icon-list-social-footer {
