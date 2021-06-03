@@ -104,23 +104,44 @@ img {
   font-size: 14px;
   line-height: 1.17;
   display: block;
+  letter-spacing: 0.02em;
 }
 .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+/*Icon header*/
 .icon-h-em {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
 }
 .icon-h-sm {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--secondary-text-color);
 }
 .icon-h-em:hover,
-.icon-h-em:focus {
+.icon-h-em:focus,
+.icon-h-sm:hover,
+.icon-h-sm:focus {
   fill: var(--accent-text-color);
+}
+/* end icon header*/
+
+/* icon faetcher*/
+.feat1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 244, 250, 1);
+  height: 120px;
+}
+.iconfeat {
+  width: 70px;
+  height: 70px;
 }
 .contact {
   margin: 0px;
