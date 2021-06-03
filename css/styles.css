@@ -116,6 +116,7 @@ img {
 .icon-h-sm {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 .icon-h-em:hover,
 .icon-h-em:focus {
