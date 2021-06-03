@@ -109,7 +109,14 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.icon-h-em {
+  width: 16px;
+  height: 12px;
+}
+.contact-link .icon-h-em:hover,
+.icon-h-em:focus {
+  color: var(--accent-text-color);
+}
 .contact {
   margin: 0px;
 }
