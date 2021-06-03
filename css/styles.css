@@ -113,9 +113,13 @@ img {
   width: 16px;
   height: 12px;
 }
-.contact-link .icon-h-em:hover,
+.icon-h-sm {
+  width: 10px;
+  height: 16px;
+}
+.icon-h-em:hover,
 .icon-h-em:focus {
-  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 .contact {
   margin: 0px;
