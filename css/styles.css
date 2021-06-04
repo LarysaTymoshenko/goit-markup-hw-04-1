@@ -127,6 +127,8 @@ img {
 .link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
 }
 /*Icon header*/
 .icon-h-em {
@@ -148,6 +150,7 @@ img {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
+
 /* end icon header*/
 
 /* icon faetcher*/
@@ -245,10 +248,12 @@ img {
 .contact-footer .link:focus,
 .contact-link .link:hover {
   color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 .site-nav .current {
   color: var(--accent-text-color);
 }
+
 /* Студия, текст и заголовки*/
 .section-color {
   background: var(--btn-portfolio-color);
@@ -473,9 +478,6 @@ img {
   margin-right: 0px;
   display: block;
   margin-bottom: 20px;
-}
-.contact-footer .footer-list:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .container-footer {
