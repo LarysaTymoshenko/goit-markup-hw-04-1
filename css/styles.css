@@ -380,17 +380,19 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.link-client:focus,
+.list-section-client .link-client-a:focus,
 .link-client:hover {
   border: 1px solid #2196f3;
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
   cursor: pointer;
+  outline: none;
 }
 
 .icon-client:hover,
 .icon-client:focus {
   fill: var(--accent-text-color);
+  outline: none;
 }
 
 /*END CLIENT*/
