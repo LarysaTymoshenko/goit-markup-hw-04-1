@@ -200,10 +200,16 @@ img {
   margin-right: 10px;
 }
 .icon-list-social:hover,
-.icon-list-social:focus {
-  fill: currentColor;
+.list-social-item > a:focus > .icon-list-social {
+  fill: var(--link-text-color);
 }
-.list-social-link:focus,
+.list-social-item > a:focus {
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--link-text-color);
+}
+
 .list-social-link:hover {
   background-color: var(--accent-text-color);
   border-radius: 50%;
@@ -380,7 +386,6 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.list-section-client .link-client-a:focus,
 .link-client:hover {
   border: 1px solid #2196f3;
   color: var(--accent-text-color);
@@ -388,9 +393,11 @@ img {
   cursor: pointer;
   outline: none;
 }
-
-.icon-client:hover,
-.icon-client:focus {
+.link-client > a:focus > .icon-client {
+  fill: var(--accent-text-color);
+  border: 1px solid #2196f3;
+}
+.icon-client:hover {
   fill: var(--accent-text-color);
   outline: none;
 }
@@ -438,7 +445,7 @@ img {
   border: 1px solid#EEEEEE;
 }
 .two-portfolio-item:hover,
-.two-portfolio-item:focus {
+.two-portfolio-a:focus {
   box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06), 0px 1px rgba(0, 0, 0, 0.12);
 }
 .box {
